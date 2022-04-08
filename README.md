@@ -1,6 +1,8 @@
 # TensorFlow Lite Python object detection example with Raspberry Pi
 
-Run the code with desired object detection
+Run the code with desired object detection.
+
+Added with custom object detection model for andriod figure, so can test easily.
 
 ```
 python3 detect.py \
