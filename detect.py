@@ -40,7 +40,14 @@ def run(model: str, camera_id: int, width: int, height: int, num_threads: int,
   start_time = time.time()
 
   # Start capturing video input from the camera
-  cap = cv2.VideoCapture(camera_id)
+  # Change code to fit ip camera from ourside
+  if camera_id == 1:
+    cap = cv2.VideoCapture('rtsp://admin:abc12345@192.168.1.5:554/Stream/Channels/101')
+  elif camera_id == 2:
+    cap = cv2.VideoCapture('rtsp://admin:abc12345@192.168.1.6:554/Stream/Channels/101')
+  else:
+    cap = cv2.VideoCapture(camera_id)
+
   cap.set(cv2.CAP_PROP_FRAME_WIDTH, width)
   cap.set(cv2.CAP_PROP_FRAME_HEIGHT, height)
 
