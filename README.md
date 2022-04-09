@@ -2,7 +2,7 @@
 
 Run the code with desired object detection.
 
-Added with custom object detection model for andriod figure, so can test easily.
+Added with custom object detection tflite model for andriod figure, so can test easily.
 
 ```
 python3 detect.py \
